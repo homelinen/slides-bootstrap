@@ -1,0 +1,73 @@
+!!!html5
+
+%html
+  %head
+    %title Presentation
+    :sass
+      @font-face
+        font-family: Roboto
+        src: url(fonts/Roboto-Regular.ttf)
+
+      .remark-slide-content
+        color: #002b36
+        font-family: Roboto
+        font-size: 130%
+        background-color: #f7f7f7
+
+      // Multicolumn list hack
+      .left
+        ol
+          padding: 0
+          margin: 0
+        li
+          width: 28%
+          font-size: 0.7em
+          float: left
+          padding: 0.1em
+          margin-left: 1.6em
+
+      .footnote
+        font-size: 0.9em
+      .middle
+        img
+          height: 20em
+          float: right
+
+      // Colours!
+      .grey
+        color: #57534F
+      .red
+        color: #dc322f
+      .green
+        color: #859900 
+      .yellow
+        color: #b58900
+      .blue
+        color: #268bd2
+      
+  %body
+
+    %textarea{id: 'source'}
+      :preserve
+        class: center middle
+
+        # Title 
+        
+        ## SubTitle?
+
+        ---
+
+        The End
+
+        * Slides at [slides.calumgilchrist.co.uk/puppet-fanduel](http://SLIDES.TLD) and [github](https://github.com)
+
+        ## Me
+
+        * EMAIL
+        * TWITTER
+
+    %script{src: 'js/remark-latest.min.js'}
+    %script
+      var slideshow = remark.create();
+
+
